@@ -1,23 +1,32 @@
-# TECHFEST — Immersive 3D Concept
+# CYBR-X // Hacker Portfolio
 
-A full animated concept website inspired by the public content and visual language of Techfest, IIT Bombay.
+A 4-section immersive cybersecurity portfolio built with vanilla HTML, CSS and JavaScript.
+
+## Included
+- Boot sequence
+- Matrix/code-rain animation
+- Custom cursor
+- Animated terminal
+- Live clock/session timer
+- Capability radar canvas
+- Animated system console with commands
+- Project/mission dossiers
+- Scroll reveal animations
+- Responsive mobile layout
+- Reduced-motion support
 
 ## Run
-Open `index.html` in a modern browser. An internet connection is required for Three.js and Google Fonts.
+Open `index.html` directly in a browser. No build step is required.
 
-## Main features
-- Full-screen Three.js atmospheric 3D scene
-- Cursor-reactive camera and object movement
-- Animated hero typography and HUD
-- Event cards and hover interactions
-- Competition terminal section
-- Techfest history timeline
-- Scroll progress indicator
-- Responsive mobile layout
-- Reduced-motion-friendly CSS
+## Customize before submission
+Search `script.js` and `index.html` for placeholder contact links and replace:
+- `your@email.com`
+- GitHub URL
+- project descriptions
+- skills / scores
+- certifications / achievements
 
-## Content reference
-Public Techfest content was referenced from https://techfest.org/ including competitions, history, events, exhibitions, Robowars and the 30th-edition positioning. Content should be rechecked against the official site before a production submission.
+Do not claim certifications, ranks, clients, vulnerabilities or project results that you cannot verify.
 
 ## GitHub Pages
-Upload all files to a repository and enable Settings → Pages → Deploy from branch → main → root.
+Create a repository, upload the three files, then enable GitHub Pages from Settings → Pages → Deploy from branch → main/root.

@@ -1,75 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>TECHFEST — IIT Bombay | Immersive Experience</title>
-<meta name="description" content="An immersive interactive concept website for Techfest, IIT Bombay." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030604"><meta name="description" content="CYBR-X — immersive cybersecurity portfolio">
+<title>CYBR-X // Security Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="loader"><div class="loader-mark">TECH<span>FEST</span></div><div class="loader-line"><i></i></div><small>INITIALIZING EXPERIENCE</small></div>
-<div class="cursor"><span></span></div>
-<div id="scene"></div>
-<div class="grain"></div>
-<div class="progress"><i></i></div>
-<header class="nav">
-  <a class="logo" href="#top">TECH<span>FEST</span><b>IIT BOMBAY</b></a>
-  <nav><a href="#about">About</a><a href="#events">Events</a><a href="#legacy">Legacy</a><a href="#experience">Experience</a></nav>
-  <a class="nav-cta" href="https://techfest.org/" target="_blank" rel="noopener">ENTER TECHFEST ↗</a>
-</header>
-<main id="top">
-<section class="hero panel" data-depth="0.4">
-  <div class="hero-copy reveal">
-    <p class="eyebrow">IIT BOMBAY · 30TH EDITION</p>
-    <h1>TECH<br><em>FEST</em></h1>
-    <p class="lead">Where science becomes spectacle, ideas become machines, and thousands of curious minds collide with the future.</p>
-    <div class="hero-actions"><a class="button primary" href="#events">EXPLORE THE FEST <span>↓</span></a><a class="text-link" href="#legacy">30 YEARS OF TOMORROW →</a></div>
-  </div>
-  <div class="hero-hud">
-    <div><span>01</span><b>THE FUTURE IS<br>BUILT HERE</b></div>
-    <div><span>SCROLL</span><i></i></div>
-  </div>
-  <div class="hero-orbit"><span>SCIENCE</span><span>TECHNOLOGY</span><span>PEOPLE</span></div>
+<div id="boot" class="boot"><div class="boot-inner"><div class="boot-logo">CYBR-X<span>_</span></div><div id="bootlog"></div><div class="bootbar"><i></i></div><small>INITIALIZING SECURE SESSION</small></div></div>
+<canvas id="matrix"></canvas><div class="noise"></div><div class="scanlines"></div><div class="cursor-dot"></div><div class="cursor-ring"></div>
+<header class="topbar"><a class="brand" href="#home">CYBR<span>-X</span></a><div class="live"><b></b> SYSTEM ONLINE <span id="clock">00:00:00</span></div><button class="menu" aria-label="Open menu">☰</button><nav><a href="#home">01_HOME</a><a href="#about">02_INTEL</a><a href="#ops">03_OPS</a><a href="#arsenal">04_ARSENAL</a><a href="#contact">05_CONNECT</a></nav></header>
+<main>
+<section id="home" class="page hero">
+<div class="hero-grid"></div><div class="hero-copy reveal"><p class="eyebrow">[ CYBERSECURITY / DIGITAL DEFENSE / RESEARCH ]</p><h1><span>THINK</span><em>LIKE</em><strong>A</strong><span>HACKER.</span></h1><p class="lead">A security-focused digital portfolio built around curiosity, ethical experimentation and relentless problem solving.</p><div class="hero-actions"><a class="btn primary" href="#ops">ENTER THE OPS ROOM <span>↗</span></a><a class="btn" href="#contact">ESTABLISH CONNECTION</a></div></div>
+<div class="terminal hero-terminal reveal"><div class="term-head"><span>root@cybr-x</span><i>● ● ●</i></div><div id="terminalLines" class="term-body"></div><div class="prompt"><span>root@cybr-x:~$</span><b class="typing"></b><i></i></div></div>
+<div class="hud hud-a">NODE // 07<br><b>ENCRYPTED</b></div><div class="hud hud-b">THREAT LEVEL <b>LOW</b><br>SESSION <span id="session">00:00</span></div>
+<div class="scrollhint">SCROLL TO BREACH THE SURFACE <span>↓</span></div>
 </section>
-<section id="about" class="statement section">
-  <div class="section-tag">01 / ABOUT</div>
-  <div class="statement-grid"><h2>NOT JUST<br><span>A FESTIVAL.</span></h2><div><p class="big-copy">Techfest is a transformative experience built around science, technology, competition, innovation and culture.</p><p>From robotics and AI to hands-on workshops, international showcases and high-energy experiences, the festival turns IIT Bombay into a meeting point for builders, dreamers and problem-solvers.</p><a href="https://techfest.org/" target="_blank" rel="noopener" class="arrow-link">DISCOVER TECHFEST ↗</a></div></div>
+<section id="about" class="page intel">
+<div class="section-title reveal"><span>02 //</span><h2>INTELLIGENCE<br><b>PROFILE</b></h2></div><div class="intel-layout">
+<div class="identity panel reveal"><div class="avatar"><span>H∆</span><i></i></div><p class="tag">SUBJECT_ID</p><h3>H∆₹₹¥</h3><p class="muted">CYBERSECURITY EXPLORER</p><div class="statusline"><b></b> AVAILABLE FOR COLLABORATION</div><div class="bio">I build, break and understand digital systems. This portfolio is a live interface for security work, technical experiments and future projects.</div></div>
+<div class="timeline panel reveal"><div class="panel-head">// OPERATOR LOG</div><article><time>01</time><div><b>FOUNDATION</b><p>Programming, operating systems, networks and Linux fundamentals.</p></div></article><article><time>02</time><div><b>RECON</b><p>Learning how systems communicate, where they fail and how defenders detect abuse.</p></div></article><article><time>03</time><div><b>BUILD</b><p>Turning experiments into usable tools, interfaces and security-focused prototypes.</p></div></article><article><time>04</time><div><b>MISSION</b><p>Keep learning. Practice ethically. Ship evidence instead of empty claims.</p></div></article></div>
+<div class="radar panel reveal"><div class="panel-head">// CAPABILITY MATRIX</div><canvas id="radar" width="420" height="360"></canvas><div class="radarlabels"><span>NETWORK</span><span>WEB</span><span>LINUX</span><span>PYTHON</span><span>DFIR</span><span>CTF</span></div></div>
+</div></section>
+<section id="ops" class="page ops"><div class="section-title reveal"><span>03 //</span><h2>FIELD<br><b>OPERATIONS</b></h2></div><div class="ops-intro reveal"><p>Not a gallery of buzzwords. Each card is structured as a mission brief: <b>problem → approach → evidence → result.</b></p><div class="counter"><strong id="threatCount">0000</strong><small>SIMULATED EVENTS PROCESSED</small></div></div><div class="mission-grid">
+<article class="mission reveal"><div class="mission-no">OP-01</div><div class="icon">⌁</div><h3>NETWORK SENTINEL</h3><p>Packet-analysis concept for detecting suspicious traffic patterns and visualizing network behavior.</p><div class="chips"><span>WIRESHARK</span><span>TCP/IP</span><span>PYTHON</span></div><button class="inspect" data-modal="network">INSPECT DOSSIER →</button></article>
+<article class="mission reveal"><div class="mission-no">OP-02</div><div class="icon">⌘</div><h3>WEB SECURITY LAB</h3><p>Ethical practice environment for understanding authentication, input validation and common web risks.</p><div class="chips"><span>OWASP</span><span>BURP</span><span>HTTP</span></div><button class="inspect" data-modal="web">INSPECT DOSSIER →</button></article>
+<article class="mission reveal"><div class="mission-no">OP-03</div><div class="icon">◈</div><h3>CTF // RED ROOM</h3><p>Challenge-driven learning focused on enumeration, cryptography, forensics and defensive reasoning.</p><div class="chips"><span>CTF</span><span>LINUX</span><span>CRYPTO</span></div><button class="inspect" data-modal="ctf">INSPECT DOSSIER →</button></article>
+</div></section>
+<section id="arsenal" class="page arsenal"><div class="section-title reveal"><span>04 //</span><h2>THE<br><b>ARSENAL</b></h2></div><div class="arsenal-grid"><div class="toolwall panel reveal"><div class="panel-head">// TOOLCHAIN</div><div class="tool" style="--p:86%"><span>LINUX</span><i></i><b>86</b></div><div class="tool" style="--p:78%"><span>PYTHON</span><i></i><b>78</b></div><div class="tool" style="--p:72%"><span>NETWORKING</span><i></i><b>72</b></div><div class="tool" style="--p:68%"><span>WEB SECURITY</span><i></i><b>68</b></div><div class="tool" style="--p:62%"><span>DIGITAL FORENSICS</span><i></i><b>62</b></div><div class="tool" style="--p:58%"><span>CRYPTOGRAPHY</span><i></i><b>58</b></div></div>
+<div class="console panel reveal"><div class="panel-head">// LIVE CONSOLE <span id="consoleStatus">CONNECTED</span></div><div id="consoleLog"></div><form id="consoleForm"><span>guest@cybr-x:~$</span><input id="cmd" autocomplete="off" aria-label="Terminal command" placeholder="type help"><button>RUN</button></form><div class="command-hint">Try: help · whoami · skills · clear · status</div></div></div>
+<div class="easter reveal"><span>01</span> curiosity is a feature. <span>02</span> evidence beats ego. <span>03</span> ethics is non-negotiable. <span>04</span> keep attacking your own assumptions.</div>
 </section>
-<section id="events" class="events section">
-  <div class="section-head"><div><div class="section-tag">02 / THE UNIVERSE</div><h2>ENTER THE<br><span>ARENAS</span></h2></div><p>Choose your dimension. Each card opens a different side of Techfest.</p></div>
-  <div class="event-grid">
-    <article class="event-card c1"><div class="num">01</div><div class="event-icon">⌬</div><h3>COMPETITIONS</h3><p>Challenge yourself across coding, quantitative reasoning, robotics, UAVs, sustainability and innovation.</p><a href="https://techfest.org/competitions" target="_blank" rel="noopener">EXPLORE →</a></article>
-    <article class="event-card c2"><div class="num">02</div><div class="event-icon">◈</div><h3>ROBOTICS</h3><p>International Robowars and robotics challenges bring engineering to life in an arena built for impact.</p><a href="https://techfest.org/robowars_reg" target="_blank" rel="noopener">ENTER ARENA →</a></article>
-    <article class="event-card c3"><div class="num">03</div><div class="event-icon">✦</div><h3>LECTURES</h3><p>Renowned personalities share ideas, journeys and perspectives that stretch beyond the ordinary.</p><a href="https://techfest.org/events/speak/" target="_blank" rel="noopener">MEET THE MINDS →</a></article>
-    <article class="event-card c4"><div class="num">04</div><div class="event-icon">△</div><h3>EXHIBITIONS</h3><p>Experience cutting-edge robotics, AI, space technology, defence systems and high-performance engineering.</p><a href="#experience">SEE WHAT'S NEXT →</a></article>
-  </div>
-</section>
-<section class="competition section">
-  <div class="section-tag">03 / LIVE SIGNAL</div>
-  <div class="comp-layout"><div><h2>BUILD.<br>BREAK.<br><span>REBUILD.</span></h2><p>Current competition themes include intelligent 3D digital twins, software auditing, probability, autonomous UAV swarms, drone security, eco-circuits, robotics and more.</p><a class="button outline" href="https://techfest.org/competitions" target="_blank" rel="noopener">VIEW COMPETITIONS ↗</a></div><div class="terminal"><div class="term-top"><span>TECHFEST / COMPETITIONS</span><i>● ● ●</i></div><div class="term-body"><p>&gt; scanning challenge matrix...</p><p class="cyan">QUANTITATIVE CODE CONFLUX</p><p class="muted">NATIONAL CODING + QUANT REASONING</p><p class="cyan">UAV-X / BVLOS SWARM</p><p class="muted">AUTONOMOUS DISASTER RESPONSE</p><p class="cyan">CODE AUDITOR</p><p class="muted">AI-GENERATED CODE DEBUGGING</p><p class="cyan">EC0CIRCUIT / THETASHIFT / ROBOREACH</p><p class="muted">HARDWARE · CONTROL · SUSTAINABILITY</p><p>&gt; <span class="blink">_</span></p></div></div></div>
-</section>
-<section id="legacy" class="legacy section">
-  <div class="section-head"><div><div class="section-tag">04 / LEGACY</div><h2>30 YEARS.<br><span>ONE FUTURE.</span></h2></div><p>Scroll through milestones that shaped Techfest's identity.</p></div>
-  <div class="timeline">
-    <article><span>2002–03</span><h3>THE TROPHY</h3><p>Techfest Trophy launched, with Micromouse bringing teams from across Asia.</p></article>
-    <article><span>2015–17</span><h3>HUMANOID ERA</h3><p>Global voices and Sophia the humanoid robot joined the Techfest story.</p></article>
-    <article><span>2020–22</span><h3>DRONE AGE</h3><p>International Drone Racing League and Techfest's first drone show arrived.</p></article>
-    <article><span>2023–24</span><h3>GLOBAL REACH</h3><p>International zonals expanded Techfest's footprint beyond India.</p></article>
-    <article><span>2025</span><h3>HUMANOIDS × DRONES</h3><p>Global Humanoid Conclave, Unitree G1 and a 1,500+ drone show pushed the scale again.</p></article>
-  </div>
-</section>
-<section id="experience" class="experience section">
-  <div class="section-tag">05 / EXPERIENCE</div><div class="experience-copy"><p class="eyebrow">THE CAMPUS BECOMES A WORLD</p><h2>SEE<br><span>THE FUTURE.</span></h2><p>Competitions. International Robowars. Workshops. Summits. TWMUN. Technoholix. Exhibitions. Every zone is designed to make technology tangible.</p><a class="button primary" href="https://techfest.org/" target="_blank" rel="noopener">ENTER THE EXPERIENCE ↗</a></div>
-  <div class="portal"><div class="portal-core">TF</div><div class="portal-ring r1"></div><div class="portal-ring r2"></div><div class="portal-ring r3"></div></div>
-</section>
-<section class="final section"><div class="final-inner"><p class="eyebrow">IIT BOMBAY · MUMBAI</p><h2>THE FUTURE<br>IS <span>WAITING.</span></h2><a class="button primary" href="https://techfest.org/" target="_blank" rel="noopener">VISIT TECHFEST.ORG ↗</a></div></section>
+<section id="contact" class="page contact"><div class="contact-bg">ACCESS</div><div class="contact-wrap reveal"><p class="eyebrow">[ 05 // SECURE CHANNEL ]</p><h2>LET'S BUILD<br><span>THE NEXT LAYER.</span></h2><p>Have a project, event, CTF team or security idea worth exploring?</p><div class="contact-actions"><a class="btn primary" href="mailto:your@email.com">SEND ENCRYPTED MESSAGE ↗</a><a class="btn" href="https://github.com/" target="_blank" rel="noopener">GITHUB / CODE</a></div><div class="contact-meta"><span>STATUS: <b>OPEN</b></span><span>LOCATION: INDIA</span><span>CHANNEL: EMAIL / GITHUB</span></div></div><footer><span>CYBR-X // 2026</span><span>BUILT FOR DEFENSIVE LEARNING & ETHICAL SECURITY</span><a href="#home">BACK TO ROOT ↑</a></footer></section>
 </main>
-<footer><div class="logo">TECH<span>FEST</span><b>IIT BOMBAY</b></div><p>Science · Technology · Innovation · People</p><a href="#top">BACK TO TOP ↑</a></footer>
-<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<div id="modal" class="modal"><div class="modal-box"><button id="closeModal">×</button><p id="modalCode">DOSSIER</p><h2 id="modalTitle">MISSION</h2><div id="modalBody"></div></div></div>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
