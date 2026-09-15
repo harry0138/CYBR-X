@@ -1,29 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Techfest — Cursor Experience</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>TECHFEST — IIT Bombay | Immersive Experience</title>
+<meta name="description" content="An immersive interactive concept website for Techfest, IIT Bombay." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main id="scene">
-  <div class="stars"></div><div class="grid"></div><div class="noise"></div>
-  <header><div class="logo">TECHFEST<span>.</span></div><div class="edition">IIT BOMBAY / 30TH EDITION</div></header>
-  <section class="hero">
-    <div class="copy">
-      <p class="eyebrow">ASIA'S LARGEST SCIENCE & TECHNOLOGY FESTIVAL</p>
-      <h1>TECHFEST</h1><div class="year">2026</div>
-      <p class="desc">A universe where science, technology and imagination collide. Move your cursor to navigate the future.</p>
-      <div class="actions"><a href="https://techfest.org/" target="_blank">ENTER TECHFEST ↗</a><span>MOVE TO EXPLORE</span></div>
-    </div>
-    <div class="orbital" aria-hidden="true">
-      <div class="halo h1"></div><div class="halo h2"></div><div class="cube"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="node n1">01<br><b>IDEAS</b></div><div class="node n2">02<br><b>PEOPLE</b></div><div class="node n3">03<br><b>IMPACT</b></div>
-    </div>
-  </section>
-  <div class="bottom"><span>CURSOR VECTOR <b id="vector">X 00 / Y 00</b></span><span>SCROLL / DISCOVER</span><span>SYSTEM ONLINE <em></em></span></div>
+<div id="loader"><div class="loader-mark">TECH<span>FEST</span></div><div class="loader-line"><i></i></div><small>INITIALIZING EXPERIENCE</small></div>
+<div class="cursor"><span></span></div>
+<div id="scene"></div>
+<div class="grain"></div>
+<div class="progress"><i></i></div>
+<header class="nav">
+  <a class="logo" href="#top">TECH<span>FEST</span><b>IIT BOMBAY</b></a>
+  <nav><a href="#about">About</a><a href="#events">Events</a><a href="#legacy">Legacy</a><a href="#experience">Experience</a></nav>
+  <a class="nav-cta" href="https://techfest.org/" target="_blank" rel="noopener">ENTER TECHFEST ↗</a>
+</header>
+<main id="top">
+<section class="hero panel" data-depth="0.4">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">IIT BOMBAY · 30TH EDITION</p>
+    <h1>TECH<br><em>FEST</em></h1>
+    <p class="lead">Where science becomes spectacle, ideas become machines, and thousands of curious minds collide with the future.</p>
+    <div class="hero-actions"><a class="button primary" href="#events">EXPLORE THE FEST <span>↓</span></a><a class="text-link" href="#legacy">30 YEARS OF TOMORROW →</a></div>
+  </div>
+  <div class="hero-hud">
+    <div><span>01</span><b>THE FUTURE IS<br>BUILT HERE</b></div>
+    <div><span>SCROLL</span><i></i></div>
+  </div>
+  <div class="hero-orbit"><span>SCIENCE</span><span>TECHNOLOGY</span><span>PEOPLE</span></div>
+</section>
+<section id="about" class="statement section">
+  <div class="section-tag">01 / ABOUT</div>
+  <div class="statement-grid"><h2>NOT JUST<br><span>A FESTIVAL.</span></h2><div><p class="big-copy">Techfest is a transformative experience built around science, technology, competition, innovation and culture.</p><p>From robotics and AI to hands-on workshops, international showcases and high-energy experiences, the festival turns IIT Bombay into a meeting point for builders, dreamers and problem-solvers.</p><a href="https://techfest.org/" target="_blank" rel="noopener" class="arrow-link">DISCOVER TECHFEST ↗</a></div></div>
+</section>
+<section id="events" class="events section">
+  <div class="section-head"><div><div class="section-tag">02 / THE UNIVERSE</div><h2>ENTER THE<br><span>ARENAS</span></h2></div><p>Choose your dimension. Each card opens a different side of Techfest.</p></div>
+  <div class="event-grid">
+    <article class="event-card c1"><div class="num">01</div><div class="event-icon">⌬</div><h3>COMPETITIONS</h3><p>Challenge yourself across coding, quantitative reasoning, robotics, UAVs, sustainability and innovation.</p><a href="https://techfest.org/competitions" target="_blank" rel="noopener">EXPLORE →</a></article>
+    <article class="event-card c2"><div class="num">02</div><div class="event-icon">◈</div><h3>ROBOTICS</h3><p>International Robowars and robotics challenges bring engineering to life in an arena built for impact.</p><a href="https://techfest.org/robowars_reg" target="_blank" rel="noopener">ENTER ARENA →</a></article>
+    <article class="event-card c3"><div class="num">03</div><div class="event-icon">✦</div><h3>LECTURES</h3><p>Renowned personalities share ideas, journeys and perspectives that stretch beyond the ordinary.</p><a href="https://techfest.org/events/speak/" target="_blank" rel="noopener">MEET THE MINDS →</a></article>
+    <article class="event-card c4"><div class="num">04</div><div class="event-icon">△</div><h3>EXHIBITIONS</h3><p>Experience cutting-edge robotics, AI, space technology, defence systems and high-performance engineering.</p><a href="#experience">SEE WHAT'S NEXT →</a></article>
+  </div>
+</section>
+<section class="competition section">
+  <div class="section-tag">03 / LIVE SIGNAL</div>
+  <div class="comp-layout"><div><h2>BUILD.<br>BREAK.<br><span>REBUILD.</span></h2><p>Current competition themes include intelligent 3D digital twins, software auditing, probability, autonomous UAV swarms, drone security, eco-circuits, robotics and more.</p><a class="button outline" href="https://techfest.org/competitions" target="_blank" rel="noopener">VIEW COMPETITIONS ↗</a></div><div class="terminal"><div class="term-top"><span>TECHFEST / COMPETITIONS</span><i>● ● ●</i></div><div class="term-body"><p>&gt; scanning challenge matrix...</p><p class="cyan">QUANTITATIVE CODE CONFLUX</p><p class="muted">NATIONAL CODING + QUANT REASONING</p><p class="cyan">UAV-X / BVLOS SWARM</p><p class="muted">AUTONOMOUS DISASTER RESPONSE</p><p class="cyan">CODE AUDITOR</p><p class="muted">AI-GENERATED CODE DEBUGGING</p><p class="cyan">EC0CIRCUIT / THETASHIFT / ROBOREACH</p><p class="muted">HARDWARE · CONTROL · SUSTAINABILITY</p><p>&gt; <span class="blink">_</span></p></div></div></div>
+</section>
+<section id="legacy" class="legacy section">
+  <div class="section-head"><div><div class="section-tag">04 / LEGACY</div><h2>30 YEARS.<br><span>ONE FUTURE.</span></h2></div><p>Scroll through milestones that shaped Techfest's identity.</p></div>
+  <div class="timeline">
+    <article><span>2002–03</span><h3>THE TROPHY</h3><p>Techfest Trophy launched, with Micromouse bringing teams from across Asia.</p></article>
+    <article><span>2015–17</span><h3>HUMANOID ERA</h3><p>Global voices and Sophia the humanoid robot joined the Techfest story.</p></article>
+    <article><span>2020–22</span><h3>DRONE AGE</h3><p>International Drone Racing League and Techfest's first drone show arrived.</p></article>
+    <article><span>2023–24</span><h3>GLOBAL REACH</h3><p>International zonals expanded Techfest's footprint beyond India.</p></article>
+    <article><span>2025</span><h3>HUMANOIDS × DRONES</h3><p>Global Humanoid Conclave, Unitree G1 and a 1,500+ drone show pushed the scale again.</p></article>
+  </div>
+</section>
+<section id="experience" class="experience section">
+  <div class="section-tag">05 / EXPERIENCE</div><div class="experience-copy"><p class="eyebrow">THE CAMPUS BECOMES A WORLD</p><h2>SEE<br><span>THE FUTURE.</span></h2><p>Competitions. International Robowars. Workshops. Summits. TWMUN. Technoholix. Exhibitions. Every zone is designed to make technology tangible.</p><a class="button primary" href="https://techfest.org/" target="_blank" rel="noopener">ENTER THE EXPERIENCE ↗</a></div>
+  <div class="portal"><div class="portal-core">TF</div><div class="portal-ring r1"></div><div class="portal-ring r2"></div><div class="portal-ring r3"></div></div>
+</section>
+<section class="final section"><div class="final-inner"><p class="eyebrow">IIT BOMBAY · MUMBAI</p><h2>THE FUTURE<br>IS <span>WAITING.</span></h2><a class="button primary" href="https://techfest.org/" target="_blank" rel="noopener">VISIT TECHFEST.ORG ↗</a></div></section>
 </main>
+<footer><div class="logo">TECH<span>FEST</span><b>IIT BOMBAY</b></div><p>Science · Technology · Innovation · People</p><a href="#top">BACK TO TOP ↑</a></footer>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
