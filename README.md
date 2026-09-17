@@ -1,32 +1,14 @@
-# CYBR-X // Hacker Portfolio
+# CYBR-X // Parallax Cybersecurity Portfolio
 
-A 4-section immersive cybersecurity portfolio built with vanilla HTML, CSS and JavaScript.
-
-## Included
-- Boot sequence
-- Matrix/code-rain animation
-- Custom cursor
-- Animated terminal
-- Live clock/session timer
-- Capability radar canvas
-- Animated system console with commands
-- Project/mission dossiers
-- Scroll reveal animations
-- Responsive mobile layout
-- Reduced-motion support
+A 4-section immersive cybersecurity portfolio using layered parallax, cursor tracking, animated terminal UI, radar, scanlines, reveal animations and responsive design.
 
 ## Run
-Open `index.html` directly in a browser. No build step is required.
+Open `index.html` in a browser. No build step required.
 
-## Customize before submission
-Search `script.js` and `index.html` for placeholder contact links and replace:
-- `your@email.com`
-- GitHub URL
-- project descriptions
-- skills / scores
-- certifications / achievements
+## Customize
+- Replace `hello@example.com` with your email.
+- Replace `YOUR-HANDLE` with your GitHub username.
+- Replace fictional/project placeholders with your real work.
 
-Do not claim certifications, ranks, clients, vulnerabilities or project results that you cannot verify.
-
-## GitHub Pages
-Create a repository, upload the three files, then enable GitHub Pages from Settings → Pages → Deploy from branch → main/root.
+## Deploy to GitHub Pages
+Create a repository, upload the three site files, then enable GitHub Pages from Settings → Pages → Deploy from branch.
